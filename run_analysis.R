@@ -62,7 +62,7 @@ rm(activity_col)
 dataset <- dataset[,c(grep("(mean\\(\\)|std\\(\\))$",names(dataset)),563,564)]
 
 #----------------------------------------------------------------------------------------------------------
-# 5. From the data set in step 4, creates a second, independent tidy data set 
+# 5. From the data set in step 4, creates a second, independent tidy data set                          DONE
 # with the average of each variable for each activity and each subject.
 #----------------------------------------------------------------------------------------------------------
 
