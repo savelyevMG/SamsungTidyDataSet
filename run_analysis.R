@@ -1,4 +1,4 @@
-setwd("D:\\#coursera\\Data Science\\03 Data cleaning\\Course Project\\data")
+#setwd("D:\\#coursera\\Data Science\\03 Data cleaning\\Course Project\\data")
 
 fileUrl   <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 fName     <- "Dataset.zip"
