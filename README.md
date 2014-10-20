@@ -1,23 +1,46 @@
-###SamsungTidyDataSet
+###Getting And Cleaning Data - Course Project
+#SamsungTidyDataSet
 ==================
-##Course Project
 
 Writing a lot of text in English is a challenge for me :)
 
+Here is my Course project for "Getting and Cleaning Data" course of the "Data Science" specialization.
+
 Here is a R script, which makes some data tiding.
 
-The original data is situated [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+
+
+Script run_analysis.R contains the R code which do the following:
+
+1. It download and unzip file from [HERE](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 This is a data of measurement of activity of different subjects which was recorded by Samsung Galaxy device. A full description  is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Script will download these data into Dataset.zip file and unzip this file by itself.
+Here is test and training data in the files. 
 
-Here is test and training data in the files. So, this script will load these data and tidy them into one nice dataset, with descriptive variable names, and only the data of the mean and standard deviation of each measurement.
+2. Data from inside of archive is used as input for script, which merge all these files together and create a data matrix of 10299 rows of variables, captured during some exploration with Samsung Galaxy. It extract only variables which present a mean and standart deviation of values.
 
-The last step is write to file "SamsungTidyDataSet.csv" a data where only average of each variable for each activity and each subject is calculated.
+
+3. Next it produce a tidy narrow dataset, where only average value is presented for each subject and each activity and each variables of previous dataset. Tidy dataset is writed to file "SamsungTidyDataSet.csv".
 
 This file could be loaded into R with the next command:
 
 *dt<-read.table("SamsungTidyDataSet.csv",sep=",",header=TRUE)*
+
+You can look this dataset with command:
+
+*head(dt,5)*
+
+or
+
+*dt*
+
+
+
+
+
+
+
